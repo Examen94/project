@@ -1,0 +1,105 @@
+
+body{
+ background: #84e1e1;
+}
+.menu ul { 
+    background-color: #333;   
+}
+
+
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #111;
+    display: block;
+}
+
+	
+.menu input[type="button"]
+{ overflow: hidden;
+     float:left;
+ margin:1px 15px;
+ padding:1px;
+ border:1px;
+ list-style-type:none;
+ cursor:pointer;
+}
+
+.menu li {
+
+ float:left;
+ margin:1px 15px;
+ padding:1px;
+ border:1px;
+ list-style-type:none;
+ cursor:pointer;  
+ background: green;
+}
+
+.menu input[type="button"]:hover ul {
+ display:block;
+}
+
+.menu li ul {
+ display:none;
+ position:absolute;
+ margin:1px auto 1px -3px;
+ border:1px;
+ padding:1px;
+
+}
+.menu li ul li {
+
+ position:relative;
+ clear:both;
+
+}
+
+.culoare a{color:black;}	
+
+.culoare a :hover{color:green;}	
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+a:hover{
+    color:red; ;
+}
+
+
+
+#right form{width:80%;
+margin:0 auto;
+
+}
+
+#search {
+    
+    
+    padding:6px 10px 6px 30px;
+    margin:3px; 
+    background: url('../img/search.png') no-repeat 1px 1px ;
+    background-color: white;
+    transition-duration: 0.3s;
+    width: 30px;
+    height:38px;
+    font-size: 25px;
+   
+    
+}
+
+#search:focus{
+    transition-duration: 0.3s;
+    width: 200px;
+    clear: both;
+}
+

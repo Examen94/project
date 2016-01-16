@@ -1,0 +1,75 @@
+
+    
+  {% extends 'base.html.twig' %}
+
+{% block body %}
+<body>
+
+ <header class="cd-header">
+		<div class="cd-logo"><a href="/sim/web/app_dev.php/"><img src="{{asset('img/cd-logo.svg')}}" alt="Logo"></a></div>
+
+		<nav>
+			<ul class="cd-secondary-nav">
+                           
+                                
+				<li><a href="logare">Log In</a></li>
+			</ul>
+		</nav> <!-- cd-nav -->
+
+		<a class="cd-primary-nav-trigger" href="#0">
+			<span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
+		</a> <!-- cd-primary-nav-trigger -->
+	</header>
+
+	<nav>
+		<ul class="cd-primary-nav">
+			<li class="cd-label">About us</li>
+
+			<li><a href="#0">The team</a></li>
+			<li><a href="#0">Our services</a></li>
+			<li><a href="#0">Our projects</a></li>
+
+			<li class="cd-label">Work with us</li>
+
+			<li><a href="#0">Start a project</a></li>
+			<li><a href="logare">Join In</a></li>
+			<li><a href="register">Create an account</a></li>
+
+			<li class="cd-label">Follow us</li>
+			
+			<li class="cd-social cd-facebook"><a href="#0">Facebook</a></li>
+			<li class="cd-social cd-instagram"><a href="#0">Instagram</a></li>
+			<li class="cd-social cd-dribbble"><a href="#0">Dribbble</a></li>
+			<li class="cd-social cd-twitter"><a href="#0">Twitter</a></li>
+		</ul>
+	</nav>
+
+	<section class="cd-intro">
+		<div class="logare" align="center">
+				
+    
+      <h3>Registration</h3>
+<form method="POST" action="register/reg" id="ad">
+<table border="1" cellspacing="0" cellpadding="10">
+<tr><td>Username:<td> <input type="text" maxlength="20" size="10" name="username">
+<tr><td>Email:<td> <input type="text" maxlength="40" size="10" name="email">
+<tr><td>Nume:<td> <input type="text" maxlength="20" size="10" name="nume">
+<tr><td>Prenume:<td> <input type="text" maxlength="20" size="10" name="prenume">
+<tr><td>Password:<td> <input type="password" maxlength="32" size="10" name="pass">
+<tr><td>Info:<td > <textarea id="info" name="info" cols="40" rows="5"></textarea>
+<tr><td><td><input type="submit" value="Sign UP"></tr>
+</table>
+</form>
+    
+    </div>
+	</section>
+    
+  <main class="cd-main-content">
+		
+  </main>
+    
+    <script src="{{asset('js/jquery-2.1.1.js')}}"></script>
+        <script src="{{asset('js/main.js')}}"></script>
+</body>
+</html>
+{%endblock%}

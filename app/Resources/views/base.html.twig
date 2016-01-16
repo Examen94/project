@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+<head>
+ 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+{% block stylesheets %}
+	
+         <link href =" {{ asset('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700') }}" rel="stylesheet" type='text/css'>
+           <link href =" {{ asset('css/reset.css') }}" rel="stylesheet"><!-- CSS reset -->
+	   <link href =" {{ asset('/css/style.css') }}" rel="stylesheet"> <!-- Resource style -->
+{%endblock%}
+{% block javascripts %}
+<script src="{{asset('js/modernizr.js')}}"></script>
+{% endblock %}
+
+	 <!-- Modernizr -->
+  	
+	<title>{% block title %}Holla!{% endblock %}</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+    
+     {% block body %}
+   
+    {%endblock%}
